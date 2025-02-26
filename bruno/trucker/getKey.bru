@@ -1,0 +1,18 @@
+meta {
+  name: getKey
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:5000/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "test_2@example.com",
+    "password": "qwerty123"
+  }
+}
